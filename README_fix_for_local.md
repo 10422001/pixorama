@@ -6,6 +6,20 @@ try it out at [https://pixorama.live](https://pixorama.live).
 For full Serverpod documentation, please visit
 [https://docs.serverpod.dev](https://docs.serverpod.dev).
 
+# 1. Install Dart,Flutter and Docker
+You will need Flutter version 3.0 or later. https://flutter.dev/docs/get-started/install
+
+Docker is used to manage Postgres and Redis. https://docs.docker.com/get-docker/
+
+Get Serverpod:
+```bash
+serverpod version
+dart pub global activate serverpod_cli
+serverpod
+serverpod version
+```
+(serverpod version => 'Serverpod version: 1.0.1')
+
 ## Server code
 On the server side there are three main files that makes Pixorama tick. Two
 serializable objects, found in the [protocol](pixorama_server/lib/src/protocol)
